@@ -1,0 +1,320 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{physics}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+{\theoremstyle{plain}
+\newtheorem{izrek}{Izrek}[section]
+\newtheorem{posledica}[izrek]{Posledica}
+}
+
+{\theoremstyle{plain}
+\newtheorem{lema}{Lema}
+}
+
+{\theoremstyle{definition}
+\newtheorem{definicija}[izrek]{Definicija}
+\newtheorem{vaja}[izrek]{Vaja}
+}
+
+{\theoremstyle{plain}
+\newtheorem{trditev}{Trditev}
+}
+
+\begin{document}
+
+\title{Priprave na Analiza 1 ustni izpit}
+\author{Mia Žele}
+\date{}
+
+\maketitle
+
+\tableofcontents
+
+\begin{abstract}
+    Dokument je namenjen pripravam na ustni izpit. Tu bodo zbrani najpomembnejši
+    izreki, trditve in definicije, ki jih bo treba znati dokazati.
+\end{abstract}
+
+
+\chapter{Števila}
+
+\section*{Pomembne definicije in izreki}
+
+\pagebreak
+
+\section*{Naloge}
+
+
+\chapter{Zaporedja}
+
+\section*{Pomembne definicije in izreki}
+
+\pagebreak
+
+\section*{Naloge}
+
+
+\chapter{Vrste}
+
+\section*{Pomembne definicije in izreki}
+
+\pagebreak
+
+\section*{Naloge}
+
+\begin{enumerate}
+    \item definicija konvergence vrste
+    \item konvergenca geometrijske vrste
+    \item trditev povezana s konvergenco vrste
+    \item harmonična vrsta
+    \item primerjalni kriterij
+    \item $ \sum_{n=1}^{\infty} \frac{1}{n^p} $
+    \item kvocietni kriterij
+    \item korenski ali Cauchyjev kriterij
+    \item Raabejev kriterij
+    \item definicija absolutna in pogojna konvergenca
+    \item če vrsta abs. konvergira, potem je konvergentna
+    \item Leibnizov kriterij za alternirajoče vrste
+    \item preureditve vrste
+    \item če je vrsta absolutno konvergentna, potem je preureditev tudi konvergentna
+    \item produkt vrst
+    \item dvakratne vrste
+\end{enumerate}
+
+\chapter{Funkcije in zveznost}
+
+\section*{Funkcije realne spremenljivke}
+
+\subsection*{Pomembne definicije in izreki}
+
+
+
+\subsection*{Naloge}
+
+\begin{enumerate}
+    \item Kdaj sta funkciji enaki?
+    \item Zožitev funkcije.
+    \item Katere podmnožice $S \subset \mathbb{R} \times \mathbb{R}$ so grafi?
+    \item Komponiranje funkcij
+    \item Kaj je inverzna funkcija od funkcije $f$?
+    \item Graf inverzne funkcije.
+    \item Kdaj je funkcija (navzgor/navzdol) omejena?
+    \item Supremum, infimum, maksimum, minimum.
+    \item Osnovne operacije s funkcijami.
+\end{enumerate}
+
+\pagebreak
+
+\section*{Zveznost}
+
+
+\subsection*{Pomembne definicije in izreki}
+Naslednje tri definicije so si ekvivalentne.
+\begin{definicija}
+    Naj bo $D \subset \mathbb{R}$, $f: D \to \mathbb{R}$ funkcija in $a \in D$. 
+    Funkcija $f$ je zvezna v točki $a$, če za vsak $\varepsilon>0$ obstaja $\delta>0$, da 
+    za vse $x \in D$ velja: če je $\abs{x-a} < \delta$, potem $\abs{f(x)-f(a)} < \varepsilon$
+\end{definicija}
+
+\begin{definicija}
+    $f$ je zvezna v točki $a \in D$, če za vsak $\varepsilon > 0$ obstaja $\delta > 0$, 
+    da se $\delta$-okolica točke $a$ s funkcijo $f$ preslika v $\varepsilon$-okolico točke $f(a)$.
+\end{definicija}
+
+\begin{definicija}
+    $f$ je zvezna v točki $a \in D$, če za vsako okolico $\mathcal{V}$ od $f(a)$ obstaja okolica 
+    $\mathcal{U}$ od $a$ v $D$, da velja: $f(\mathcal{U}) \subset \mathcal{V}$
+\end{definicija}
+
+
+\begin{izrek}
+    Naj bo $D \subset \mathbb{R}, f: D \to \mathbb{R}$ funkcija, $a \in D$. Potem je funkcija $f$ 
+    zvezna v točki $a$ natanko tedaj, kadar za vsako zaporedje $(x_n)$ v $D$, ki konvergira proti $a$, 
+    zaporedje $(f(x_n))$ konvergira proti $f(a)$.
+\end{izrek}
+
+\subsection*{Naloge}
+
+\begin{enumerate}
+    \item Karakterizacija zveznosti, grafični prikaz, primeri nezvenzih funkcij.
+    \item Primerjava različnih definicij zveznosti: standardna, z okolicami.
+    \item Dirichletova funkcija.
+    \item Opis zveznosti z zaporedji.
+    \item Če sta $f$ in $g$ zvezni v $a$, potem so tudi $f+g, f-g, fg in \frac{f}{g} (g(x) \neq 0)$ zvezne v $a$.
+    \item Zveznost kompozituma.
+    \item Kdaj pravimo, da je funkcija zvezna?
+    \item Definicija limite funkcije.
+    \item Leva in desna limita.
+    \item Definicija (strogo) naraščajoče/padajoče funkcije; kaj je skok funkcije?
+    \item Monotona funkcija definirana na zaprtem intervalu ima kvečjemu končno mnogo točk nezvevnosti.
+    \item Limita funkcije, ko gre $x$ preko vsake meje.
+    \item Cauchyjev pogoj.
+    \item $\lim_{x \to 0} \frac{\sin(x)}{x}$
+    \item $\lim_{x \to 0} \frac{a^x - 1}{x}$
+    \item Definicija enakomerne zveznosti.
+    \item Zvezna funkcija definirana na zaprtem intervalu je enakomerno zvezna.
+    \item Lema o pokritjih. (s tem dokažeš zgornji izrek)
+    \item Bisekcija. Izrek o vloženih intervalih.
+    \item Zvezna funkcija definirana na zaprtem intervalu je omejena (doseže minimum in maksimum).
+    \item Inverz od strogo monotone zvezne funkcije definirane na zaprtem intervalu je zvezen.
+    \item Zveznosti posebnih funkcij: eksponentna, logaritemska, kotne, ciklometrične.
+\end{enumerate}
+
+
+
+
+
+\chapter{Odvod}
+
+\section*{Pomembne definicije in izreki}
+
+Vse izreke in trditve je treba znati dokazati!
+
+\begin{definicija}
+    Naj bo funkcija $f$ definirana v okolici točke $a$. Če obstaja limita
+     $\lim_{h\to 0}\frac{f(a+h)-f(a)}{h}$, jo imenujemo odvod funkcije $f$ v 
+     točki $a$ in jo označimo s $f'(a)$ in rečemo, da je $f$ odvedljiva v točki $a$.
+\end{definicija}
+
+\begin{izrek}
+    Nja bo funkcija $f$ definirana v okolici točke $a$. Če je $f$ odvedljiva v $a$, 
+    potem je $f$ zvezna v točki $a$.
+\end{izrek}
+
+\begin{trditev}
+    Naj bo funkcija $f$ definirana v okolici točke $a$. Funkcija $f$ je odvedljiva v točki $a$
+     natanko tedaj, kadar obstajata levi in desni odvod funkcije $f$ v točki $a$ in sta enaka.
+\end{trditev}
+
+\begin{izrek}
+    Naj bo funkcija $f$ definirana v okolici točke $a$. Potem je $f$ diferenciabilna v točki $a$ 
+    natanko tedaj, kadar je $f$ odvedljiva v točki $a$. Tedaj velja: $$\dd f(a)(h)=f'(a) h$$ 
+\end{izrek}
+
+\begin{izrek}
+    Naj bo funkcija $f: [a,b] \to \mathbb{R}$ odvedljiva v točki $c \in (a,b)$. 
+    Če je $c$ lokalni ekstrem funkcije $f$, potem $f'(c)=0$. 
+\end{izrek}
+
+\begin{izrek}
+    \emph{Rollov izrek}: Naj bo funkcija $f: [a,b] \to \mathbb{R}$ zvezna na $[a,b]$ in odvedljiva na $(a,b)$. 
+    Če je $f(a)=f(b)$, potem obstaja $c \in (a,b): f'(c)=0$.
+\end{izrek}
+
+\begin{izrek}
+    \emph{Lagrangeev izrek}: Naj bo funkcija $f: [a,b] \to \mathbb{R}$ zvezna na $[a,b]$ in odvedljiva na $(a,b)$. 
+    Potem obstaja $c \in (a,b)$, da je $f(b)-f(a)=f'(c)(b-a)$.
+\end{izrek}
+
+\begin{trditev}
+    Denimo,da je funkcija $f$ dvakrat odvedljiva v okolici točke $a$ in denimo, da je $a$ stacionarna točkka od $f$.
+    \begin{enumerate}
+        \item Če je $f''(x) \leq 0$ za vse $x$ v neki okolici točke $a$, potem ima $f$ v $a$ lokalni maksimum.
+        \item Če je $f''(x) \geq 0$ za vse $x$ v neki okolici točke $a$, potem ima $f$ v $a$ lokalni minimum.
+    \end{enumerate}
+\end{trditev}
+
+\begin{definicija}
+    Naj bo funkcija $f$ definirana na intervalu $I$. Pravimo, da je $f$ \textbf{konveksna} na $I$, če velja: za vsak $a,b \in I, a < b$ velja: 
+    $$f(x) \leq f(a) + \frac{f(b)-f(a)}{b-a} (x-a) \text{ za vse } x \in [a,b].$$
+\end{definicija}
+
+\begin{definicija}
+    Naj bo funkcija $f$ definirana na intervalu $I$. Pravimo, da je $f$ \textbf{konkavna} na $I$, če velja: za vsak $a,b \in I, a < b$ velja: 
+    $$f(x) \geq f(a) + \frac{f(b)-f(a)}{b-a} (x-a) \text{ za vse } x \in [a,b].$$
+\end{definicija}
+
+\begin{izrek}
+    Naj bo $f$ odvedljia funkcija na odprtem intervalu $I$. Potem je $f$ konveksna na $I$ natanko tedaj, 
+    kadar za vsaka $a,x \in I$ velja: $$f(x) \geq f(a) + f'(a)(x-a).$$
+\end{izrek}
+
+\begin{izrek}
+    Naj bo $f$ odvedljiva na odprtem intervalu $I$. Potem je $f$ konveksna natanko tedaj, 
+    kadar je odvod $f'$ naraščajoča na $I$. Če je $f$ dvakrat odvedljiva na $I$, potem je $f$ konveksna natanko tedaj, 
+    kadar je $f'' \geq 0$ na $I$.
+\end{izrek}
+
+\begin{definicija}
+    Naj bo funkcija $f$ definirana na intervalu $I$. Če za $a \in I$ obstaja okolica točke $a$, da je na eni strani $f$ 
+    konveksna, na drugi točke $a$ znotraj te okolice pa $f$ konkavna, potem rečemo, da ima $f$ v $a$ \textbf{prevoj}. 
+\end{definicija}
+
+\begin{lema}
+    Cauchyjev izrek: Naj bosta $f$ in $g$ zvezni funkciji na $[a,b]$, odvedljivi na $(a,b)$ in naj velja, da  
+    $g'(x) \neq 0 \text{ za vse } x \in (a,b)$. Tedaj obstaja $c \in  (a,b)$: $$\frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)}$$
+\end{lema}
+
+\begin{izrek}
+    \textbf{L'Hôpitalovo pravilo}: Naj bosta funkciji $f$ in $g$ odvedljivi na $(a,b)$ in denimo, da velja:
+    \begin{enumerate}
+        \item $g(x) \neq 0, g'(x) \neq 0 \text{ za vse } x \in (a,b)$,
+        \item $\lim_{x \searrow a} f(x) = 0 \text{ in } \lim_{x \searrow a} g(x) = 0$.
+    \end{enumerate} 
+    Če obstaja $\lim_{x \searrow a} \frac{f'(x)}{g'(x)}$, potem obstaja $\lim_{x \searrow a} \frac{f(x)}{g(x)}$ in limiti sta enaki.
+\end{izrek}
+
+\begin{izrek}
+    Naj bosta funkciji $f$ in $g$ odvedljivi na $(a,b)$, naj bo $g'(x) \neq 0 \text{ za vse } x \in (a,b) \text{ in } \lim_{x \searrow a} g(x) = \infty$ (ali $- \infty$). 
+    Če obstaja $\lim_{x \searrow a} \frac{f'(x)}{g'(x)}$, potem obstaja $\lim_{x \searrow a} \frac{f(x)}{g(x)}$ in sta enaki.
+\end{izrek}
+
+\begin{definicija}
+    Pot v ravnini je preslikava $F: I \to \mathbb{R}^2$, kjer je $I$ interval, $x \in I: F(x) = (\alpha(x), \beta(x))$, in kjer sta funkciji $\alpha$ in $\beta$ 
+    zvezni. Tir poti je množica $K = F(I) = {(\alpha(x), \beta(x)); x \in I}$. Preslikavo $F$ imenujemo parametrizacija tira poti $K$.
+\end{definicija}
+
+\begin{izrek}
+    Naj bo $F: I \to \mathbb{R}^2$ zvezno odvedljiva pot, $t_0$ iz notranjosti intervala $I$ in denimo, da je $\dot{F}(t_0) \neq 0$. Če je $\dot{\alpha}(t_0) \neq 0$, 
+    potem obstaja tak $\delta > 0$, da lahko tir poti $K = {F(t); \abs{t - t_0} < \delta}$ zapišemo kot graf neke odvedljive funkcije $f$ nad intervalom $U$ 
+    okrog točke $\alpha(t_0)$: $K = {(x, f(x)); x \in U}$. Velja: $f'(\alpha(t)) = \frac{\dot{\beta(t)}}{\dot{\alpha(t)}}, \abs{t - t_0} < \delta$.
+\end{izrek}
+
+
+\pagebreak
+
+\section*{Naloge}
+\begin{enumerate}
+    \item Karakterizacija odvoda.
+    \item Splošna definicija.
+    \item Potreben pogoj za odvedljivost.
+    \item Levi in desni odvod.
+    \item Kdaj je funkcija zvezno odvedljiva?
+    \item Kdaj je funkcija odsekoma zvezno odvedljiva?
+    \item Kdaj je funkcija $f$ diferenciabilna v točki $a$?
+    \item Pravila za odvajanje.
+    \item Odvod inverza.
+    \item Odvodi elementarnih funkcij.
+    \item Odvodi višjega reda.
+    \item Rollov in Lagrangeev izrek, povezava med njima in njegove posledice.
+    \item Lokalni ekstremi.
+    \item Stacionarna točka.
+    \item Iskanje globalnih ekstremov odvedljivih funkcij, kandidati.
+    \item Definicija konveksnosti in konkavnosti.
+    \item Kako rišemo grafe funkij s pomočjo odvoda?
+    \item L'Hôpitalovo pravilo in njegova uporaba.
+    \item Kako lahko podajamo krivulje?
+    \item Kaj je pot v ravnini, tir poti, parametrizacija?
+    \item Kdaj pravimo, da je pot zvezno odvedljiva?
+\end{enumerate}
+
+
+
+
+\chapter{Integral}
+
+
+
+\end{document}

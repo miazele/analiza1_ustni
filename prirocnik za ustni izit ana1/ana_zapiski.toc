@@ -1,0 +1,7 @@
+\babel@toc {slovene}{}\relax 
+\contentsline {chapter}{\numberline {1}Števila}{1}{}%
+\contentsline {chapter}{\numberline {2}Zaporedja}{3}{}%
+\contentsline {chapter}{\numberline {3}Vrste}{5}{}%
+\contentsline {chapter}{\numberline {4}Funkcije in zveznost}{7}{}%
+\contentsline {chapter}{\numberline {5}Odvod}{10}{}%
+\contentsline {chapter}{\numberline {6}Integral}{14}{}%
