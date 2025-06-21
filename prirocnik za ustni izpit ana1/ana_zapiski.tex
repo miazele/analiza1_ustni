@@ -106,22 +106,25 @@
 \section*{Naloge}
 
 \begin{enumerate}
-    \item definicija konvergence vrste
-    \item konvergenca geometrijske vrste
-    \item trditev povezana s konvergenco vrste
-    \item harmonična vrsta
-    \item primerjalni kriterij
-    \item $ \sum_{n=1}^{\infty} \frac{1}{n^p} $
-    \item kvocietni kriterij
-    \item korenski ali Cauchyjev kriterij
-    \item Raabejev kriterij
-    \item definicija absolutna in pogojna konvergenca
-    \item če vrsta abs. konvergira, potem je konvergentna
-    \item Leibnizov kriterij za alternirajoče vrste
-    \item preureditve vrste
-    \item če je vrsta absolutno konvergentna, potem je preureditev tudi konvergentna
-    \item produkt vrst
-    \item dvakratne vrste
+    \item Definicija številske vrste. Kdaj konvergira?
+    \item Konvergenca geometrijske vrste.
+    \item $\sum_{n=1}^{\infty}a_n$ konvergira natanko tedaj, kadar za vsak $\varepsilon > 0$ obstaja $N \in \mathbb{N}$ da velja:
+            če je $n \geq N$ in $k \in \mathbb{N}$, potem $\abs{a_{n+1} + a_{n+2} + \dots + a_{n+k}} < \varepsilon$.
+    \item Vsota konvergentih vrst.
+    \item Harmonična vrsta $\sum_{n=1}^{\infty} \frac{1}{n}$.
+    \item Primerjalni kriterij.
+    \item Obravnavaj konvergenco $\sum_{n=1}^{\infty} \frac{1}{n^p}$.
+    \item Kvocietni kriterij.
+    \item Korenski ali Cauchyjev kriterij.
+    \item Raabejev kriterij. ($r_n = n (\frac{a_n}{a_{n+1}} - 1)$)
+    \item Definicija absolutne in pogojne konvergence.
+    \item Če vrsta je absolutno konvergentna, potem je konvergentna.
+    \item Leibnizov kriterij za alternirajoče vrste.
+    \item Preureditve vrste.
+    \item Če je vrsta absolutno konvergentna, potem je preureditev tudi konvergentna.
+    \item Riemmanov izrek.
+    \item Produkt vrst.
+    \item Dvakratne vrste.
 \end{enumerate}
 
 \chapter{Funkcije in zveznost}
@@ -136,7 +139,7 @@
 
 \begin{enumerate}
     \item Kdaj sta funkciji enaki?
-    \item Zožitev funkcije.
+    \item Zožitev/razširitev funkcije.
     \item Katere podmnožice $S \subset \mathbb{R} \times \mathbb{R}$ so grafi?
     \item Komponiranje funkcij
     \item Kaj je inverzna funkcija od funkcije $f$?
@@ -183,16 +186,21 @@ Naslednje tri definicije so si ekvivalentne.
     \item Primerjava različnih definicij zveznosti: standardna, z okolicami.
     \item Dirichletova funkcija.
     \item Opis zveznosti z zaporedji.
-    \item Če sta $f$ in $g$ zvezni v $a$, potem so tudi $f+g, f-g, fg $ in $\frac{f}{g} (g(x) \neq 0)$ zvezne v $a$.
+    \item Če sta $f$ in $g$ zvezni v $a$, potem so tudi $f+g, f-g, fg $ in $\frac{f}{g}$ $(g(a) \neq 0)$ zvezne v $a$.
     \item Zveznost kompozituma.
     \item Kdaj pravimo, da je funkcija zvezna?
     \item Definicija limite funkcije.
+    \item Funkcija $f$ je zvezna v točki $a$ natanko tedaj, ko je $\lim_{x \to a} f(x) = f(a)$.
+    \item Karakterizacija limite z zaporedji in pravila za računanje limit.
     \item Leva in desna limita.
+    \item $\lim_{x \to a} f(x)$ obstaja natanko tedaj, ko obstajata $\lim_{x \uparrow a} f(x)$ ter $\lim_{x \downarrow a} f(x)$ in sta enaki.
     \item Definicija (strogo) naraščajoče/padajoče funkcije; kaj je skok funkcije?
     \item Monotona funkcija definirana na zaprtem intervalu ima kvečjemu končno mnogo točk nezvevnosti.
     \item Limita funkcije, ko gre $x$ preko vsake meje.
-    \item Cauchyjev pogoj.
+    \item Cauchyjev pogoj za funkcije.
+    \item Kdaj je limita funkcije enaka neskončno?
     \item $\lim_{x \to 0} \frac{\sin(x)}{x}$
+    \item $\lim_{x \to \infty}(1 + \frac{1}{x})^x$
     \item $\lim_{x \to 0} \frac{a^x - 1}{x}$
     \item Definicija enakomerne zveznosti.
     \item Zvezna funkcija definirana na zaprtem intervalu je enakomerno zvezna.
@@ -280,7 +288,7 @@ Vse izreke in trditve je treba znati dokazati!
 
 \begin{definicija}
     Naj bo funkcija $f$ definirana na intervalu $I$. Če za $a \in I$ obstaja okolica točke $a$, da je na eni strani $f$ 
-    konveksna, na drugi točke $a$ znotraj te okolice pa $f$ konkavna, potem rečemo, da ima $f$ v $a$ \textbf{prevoj}. 
+    konveksna, na drugi strani točke $a$ znotraj te okolice pa $f$ konkavna, potem rečemo, da ima $f$ v $a$ \textbf{prevoj}. 
 \end{definicija}
 
 \begin{lema}
@@ -310,7 +318,7 @@ Vse izreke in trditve je treba znati dokazati!
 \begin{izrek}
     Naj bo $F: I \to \mathbb{R}^2$ zvezno odvedljiva pot, $t_0$ iz notranjosti intervala $I$ in denimo, da je $\dot{F}(t_0) \neq 0$. Če je $\dot{\alpha}(t_0) \neq 0$, 
     potem obstaja tak $\delta > 0$, da lahko tir poti $K = {F(t); \abs{t - t_0} < \delta}$ zapišemo kot graf neke odvedljive funkcije $f$ nad intervalom $U$ 
-    okrog točke $\alpha(t_0)$: $K = {(x, f(x)); x \in U}$. Velja: $f'(\alpha(t)) = \frac{\dot{\beta(t)}}{\dot{\alpha(t)}}, \abs{t - t_0} < \delta$.
+    okrog točke $\alpha(t_0)$: $K = {(x, f(x)); x \in U}$. Velja: $f'(\alpha(t)) = \frac{\dot{\beta}(t)}{\dot{\alpha}(t)}, \abs{t - t_0} < \delta$.
 \end{izrek}
 
 
@@ -329,18 +337,22 @@ Vse izreke in trditve je treba znati dokazati!
     \item Kdaj je funkcija $f$ diferenciabilna v točki $a$? Kaj je diferencial funkcije?
     \item Pravila za odvajanje: odvod vsote, produkta, kvocienta, kompozituma funkcij.
     \item Odvod inverza.
-    \item Odvodi elementarnih funkcij.
+    \item Odvodi elementarnih funkcij: logaritem, eksponent, potenčne funkcije, kotne, krožne.
     \item Odvodi višjega reda.
-    \item Rollov in Lagrangeev izrek, povezava med njima in njegove posledice.
-    \item Lokalni ekstremi.
+    \item Definicija lokalnega maksimuma in minimuma.
     \item Stacionarna točka.
+    \item Rollov in Lagrangeev izrek, povezava med njima in njegove posledice.
     \item Iskanje globalnih ekstremov odvedljivih funkcij, kandidati.
-    \item Definicija konveksnosti in konkavnosti.
+    \item Definicija konveksnosti in konkavnosti, grafična interpretacija.
+    \item Definicija prevoja.
     \item Kako rišemo grafe funkij s pomočjo odvoda?
     \item L'Hôpitalovo pravilo in njegova uporaba.
     \item Kako lahko podajamo krivulje?
     \item Kaj je pot v ravnini, tir poti, parametrizacija?
     \item Kdaj pravimo, da je pot zvezno odvedljiva?
+    \item Kako izračunamo naklon tangente na krivulje?
+    \item Pojmi regularna parametrizacija, gladka parametrizacija, kritična in regularna točka.
+    \item Enačba tangente in normale.
 \end{enumerate}
 
 
