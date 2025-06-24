@@ -5,7 +5,6 @@ A se učiš analizo? Mogoče ti ta priročnik pomaga pri študiranju. Tu so zbra
 ## Končana poglavja:
 - Zaporedja
 - Številske vrste
-
-## Skoraj končana poglavja:
 - Funkcije
 - Odvod
+
