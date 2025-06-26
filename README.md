@@ -8,3 +8,5 @@ A se učiš analizo? Mogoče ti ta priročnik pomaga pri študiranju. Tu so zbra
 - Funkcije
 - Odvod
 
+## Skoraj končana poglavja:
+- Metrični prostori
