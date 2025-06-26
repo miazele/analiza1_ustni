@@ -7,6 +7,6 @@ A se učiš analizo? Mogoče ti ta priročnik pomaga pri študiranju. Tu so zbra
 - Številske vrste
 - Funkcije
 - Odvod
+- Metrični prostori
 
 ## Skoraj končana poglavja:
-- Metrični prostori
